@@ -1,4 +1,4 @@
-HR App - Frontend (React)
+# HR App - Frontend (React)
 
 HR App เป็นระบบจัดการทรัพยากรบุคคลที่ใช้ React.js สำหรับ Frontend และ Laravel สำหรับ Backend
 
