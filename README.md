@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+HR App - Frontend (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+HR App เป็นระบบจัดการทรัพยากรบุคคลที่ใช้ React.js สำหรับ Frontend และ Laravel สำหรับ Backend
 
-## Available Scripts
+📌 คุณสมบัติของระบบ
 
-In the project directory, you can run:
+ระบบล็อกอินด้วย JWT Authentication
 
-### `npm start`
+ระบบเปลี่ยนรหัสผ่านครั้งแรก
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+รองรับการล็อกอินด้วย Biometric PIN
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ระบบจัดการโปรไฟล์พนักงาน
 
-### `npm test`
+ระบบสะสมแต้มและแลกของรางวัล
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🚀 การติดตั้งและใช้งาน
+1. ติดตั้ง Dependencies
+   npm install
+2.ตั้งค่า Environment
+   สร้างไฟล์ .env และกำหนดค่าดังนี้: REACT_APP_API_URL=http://localhost:8000
+3. รันโปรเจค
+   npm start
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🔑 การใช้งานระบบ
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1️⃣ ล็อกอินเข้าสู่ระบบ
+กรอกรหัสพนักงาน และรหัสผ่าน
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+หากเป็นครั้งแรก ระบบจะบังคับให้เปลี่ยนรหัสผ่านและกรอกข้อมูลส่วนตัว
 
-### `npm run eject`
+สามารถเลือกล็อกอินด้วย PIN หรือ Biometric ได้
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2️⃣ การเปลี่ยนรหัสผ่าน
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+เมื่อเข้าสู่ระบบครั้งแรก ระบบจะให้เปลี่ยนรหัสผ่านใหม่
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+ต้องกรอก ชื่อ, เบอร์โทรศัพท์, ที่อยู่ ก่อนใช้งาน
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3️⃣ จัดการโปรไฟล์
 
-## Learn More
+อัปเดตข้อมูลส่วนตัวได้ เช่น ชื่อ, อีเมล, ที่อยู่
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
