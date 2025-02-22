@@ -11,7 +11,6 @@ import axios from "axios";
 import Swal from "sweetalert2";
 
 function ChangePin() {
-
     const navigate = useNavigate();
     const API_URL = process.env.REACT_APP_API_URL;
     const [pin, setPin] = useState("");
@@ -20,7 +19,7 @@ function ChangePin() {
         if (pin.length === 6) {
             onSubmit();
         }
-    }, [pin]);
+    }, [pin]);  
 
     const handleAddNumber = (num) => {
         if (pin.length < 6) {

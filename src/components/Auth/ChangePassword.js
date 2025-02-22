@@ -11,17 +11,16 @@ const ChangePassword = () => {
 
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-  const [name, setName] = useState(localStorage.getItem("Name") || ""); // ✅ ดึงชื่อจาก localStorage
+  const [name, setName] = useState(localStorage.getItem("Name") || ""); 
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [address, setAddress] = useState("");
-
   useEffect(() => {
     if (!localStorage.getItem("token")) {
-      navigate("/login"); // ✅ ถ้าไม่มี Token ให้กลับไปหน้า Login
+      navigate("/login"); 
     }
-  }, [navigate]);
-
+  }, [navigate]); 
+  
   const validateForm = () => {
     if (!password || !confirmPassword || !name || !phone || !address) {
       Swal.fire({
@@ -117,6 +116,7 @@ const ChangePassword = () => {
           <Form.Control
             placeholder="ชื่อพนักงาน"
             value={name}
+            onChange={(e) => setName(e.target.value)} 
             readOnly // ✅ ชื่อพนักงานไม่ให้แก้ไข
           />
         </Form.Group>
