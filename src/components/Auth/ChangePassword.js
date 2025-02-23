@@ -55,7 +55,7 @@ const ChangePassword = () => {
           Swal.showLoading();
         },
       });
-      const response = await axios.post(
+      const response = await axios.put(
         url,
         { password, name, phone, email, address },
         {
@@ -64,13 +64,6 @@ const ChangePassword = () => {
       );
 
       if (response.status === 200) {
-
-        // Swal.fire({
-        //   icon: "success",
-        //   title: "เปลี่ยนรหัสผ่านสำเร็จ!",
-        //   text: "กรุณาเข้าสู่ระบบใหม่",
-        // });
-        // console.log(response);
         Swal.close();
         navigate("/change-pin");
       }

@@ -64,8 +64,8 @@ function ChangePin() {
                 },
             });
 
-            const response = await axios.post(url,
-                { pin }, // ส่ง PIN ไปใน Body
+            const response = await axios.put(url,
+                { pin }, 
                 {
                     headers: { Authorization: `Bearer ${token}` },
                 }
